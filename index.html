@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Lastra Bachmann</title>
+    <title>Pablo Lastra Bachmann - Data Scientist</title>
     <style>
         * {
             margin: 0;
@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
             min-height: 100vh;
         }
 
@@ -28,7 +28,7 @@
         header {
             text-align: center;
             padding: 4rem 0;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
@@ -36,18 +36,19 @@
 
         h1 {
             font-size: 2.5rem;
-            color: #2c3e50;
+            color: #1a2a6c;
             margin-bottom: 1rem;
         }
 
         .subtitle {
             font-size: 1.2rem;
-            color: #7f8c8d;
+            color: #b21f1f;
             margin-bottom: 2rem;
+            font-weight: 600;
         }
 
         .content {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             padding: 2rem;
             border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,17 +56,42 @@
 
         .section {
             margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
         }
 
         .section h2 {
-            color: #2c3e50;
+            color: #1a2a6c;
             margin-bottom: 1rem;
             font-size: 1.8rem;
+            border-bottom: 2px solid #fdbb2d;
+            padding-bottom: 0.5rem;
         }
 
         .section p {
             margin-bottom: 1rem;
             color: #34495e;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #1a2a6c;
+            color: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-3px);
         }
 
         .social-links {
@@ -76,16 +102,17 @@
         }
 
         .social-links a {
-            color: #2c3e50;
+            color: #1a2a6c;
             text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: 2px solid #2c3e50;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #1a2a6c;
             border-radius: 5px;
             transition: all 0.3s ease;
+            font-weight: 600;
         }
 
         .social-links a:hover {
-            background: #2c3e50;
+            background: #1a2a6c;
             color: white;
         }
 
@@ -101,30 +128,53 @@
             h1 {
                 font-size: 2rem;
             }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>¡Hola, soy Pablo Lastra Bachmann!</h1>
-            <p class="subtitle">Desarrollador Web & Entusiasta de la Tecnología</p>
+            <h1>Pablo Lastra Bachmann</h1>
+            <p class="subtitle">Data Scientist Senior</p>
         </header>
 
         <div class="content">
             <div class="section">
                 <h2>Sobre Mí</h2>
-                <p>Bienvenido a mi sitio personal. Soy un apasionado por la tecnología y el desarrollo web, siempre en busca de nuevos desafíos y oportunidades para crecer profesionalmente.</p>
+                <p>Data Scientist Senior con amplia experiencia en el desarrollo de soluciones basadas en datos. Especializado en machine learning, análisis predictivo y visualización de datos. Apasionado por transformar datos complejos en insights accionables que generan valor para el negocio.</p>
             </div>
 
             <div class="section">
-                <h2>Mis Intereses</h2>
-                <p>Me encanta explorar nuevas tecnologías, aprender sobre desarrollo web y compartir conocimiento con la comunidad.</p>
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Machine Learning</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">R</div>
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">Deep Learning</div>
+                    <div class="skill-item">Data Visualization</div>
+                    <div class="skill-item">Big Data</div>
+                    <div class="skill-item">Statistical Analysis</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Áreas de Experiencia</h2>
+                <p>• Desarrollo e implementación de modelos predictivos y de machine learning</p>
+                <p>• Análisis estadístico avanzado y visualización de datos</p>
+                <p>• Procesamiento de datos a gran escala</p>
+                <p>• Optimización de procesos de negocio mediante análisis de datos</p>
+                <p>• Liderazgo de equipos de ciencia de datos</p>
             </div>
 
             <div class="social-links">
                 <a href="https://github.com/lastra00" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/tu-usuario" target="_blank">Twitter</a>
             </div>
         </div>
     </div>
